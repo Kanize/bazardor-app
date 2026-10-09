@@ -1,8 +1,9 @@
+import Link from "next/link";
 import { Iproducts } from "../Type/type";
 
 const ProductCard = ({ product }: { product: Iproducts }) => {
     return (
-        <div>
+        <Link href={`/product/${product.id}`}> 
         <div className="rounded-xl border border-gray-200 bg-white p-5 shadow-sm transition hover:shadow-md">
             {/* Icon + Name */}
             <div className="mb-4 flex items-center gap-3  ">
@@ -51,7 +52,7 @@ const ProductCard = ({ product }: { product: Iproducts }) => {
                 </span>
             </div>
         </div>
-        </div>
+        </Link>
     );
 };
 
