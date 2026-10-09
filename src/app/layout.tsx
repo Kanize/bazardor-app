@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
-import { Noto_Serif_Bengali } from "next/font/google";
+import { Hind_Siliguri } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header/Header";
 import Footer from "@/components/Footer/Footer";
+import { ToastContainer } from "react-toastify";
 
-const notoSerifBengali = Noto_Serif_Bengali({
+const hindSiliguri = Hind_Siliguri({
+  weight: ["300", "400", "500", "600", "700"],
   subsets: ["latin", "bengali"],
 });
 
@@ -18,11 +20,12 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${notoSerifBengali.className} h-full antialiased`}
+      className={`${hindSiliguri.className} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
         <Header />
         {children}
+        <ToastContainer />
         <Footer/>
         </body>
     </html>

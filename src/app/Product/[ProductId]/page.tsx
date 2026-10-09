@@ -2,6 +2,8 @@ import { Iproducts } from "@/components/Type/type";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
+export const instant = false;
+
 const ProductDetailPage = async ({
   params,
 }: {
