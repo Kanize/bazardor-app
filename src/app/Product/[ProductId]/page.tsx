@@ -17,7 +17,11 @@ const ProductDetailPage = async ({
     `https://openapi.programming-hero.com/api/bazardor/products/${productId}`
   );
 
-  if (!res.ok) notFound();
+  if (!res.ok) {
+  console.error("Product API status:", res.status);
+  console.error("Product ID:", productId);
+  throw new Error(`Product fetch failed: ${res.status}`);
+}
 
   const product: Iproducts = await res.json();
 
