@@ -4,7 +4,7 @@ import ProductCard from "./productCard";
 const PriceDown = async () => {
     'use cache'
     const res = await fetch(
-        "https://api.api-store.workers.dev/api/bazardor/products"
+        "https://openapi.programming-hero.com/api/bazardor/products"
     );
 
     const data: Iproducts[] = await res.json();

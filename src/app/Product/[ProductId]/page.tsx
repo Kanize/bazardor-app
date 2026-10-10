@@ -14,7 +14,7 @@ const ProductDetailPage = async ({
   const { productId } = await params;
 
   const res = await fetch(
-    `https://api.api-store.workers.dev/api/bazardor/products/${productId}`
+    `https://openapi.programming-hero.com/api/bazardor/products/${productId}`
   );
 
   if (!res.ok) notFound();
@@ -138,7 +138,7 @@ const ProductDetailPage = async ({
           </h2>
 
           <div className="overflow-x-auto">
-            <table className="w-full min-w-[500px] border-collapse text-left text-sm">
+            <table className="w-full min-w-125 border-collapse text-left text-sm">
               <thead>
                 <tr className="border-y border-[#e3ebe3] text-xs text-gray-500">
                   <th className="px-3 py-3 font-medium">বাজার</th>

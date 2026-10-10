@@ -32,6 +32,15 @@ const SignUpPage = () => {
 
     }
 
+    const handleGoogleSignUp = async () => {
+    const data = await authClient.signIn.social({
+    provider: "google",});
+    }
+    const handleGithubSignUp = async () => {
+    const data = await authClient.signIn.social({
+    provider: "github",});
+    }
+
     return (
         <main className="min-h-screen bg-[#f0f5f1] px-4 py-8 text-gray-800">
         <div className="mx-auto w-full max-w-md">
@@ -136,6 +145,7 @@ const SignUpPage = () => {
 
             <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
                 <button
+                onClick={handleGoogleSignUp}
                 type="button"
                 className="btn h-10 min-h-0 rounded-lg border border-gray-300 bg-transparent px-2 text-xs text-gray-800 hover:bg-gray-50"
                 >
@@ -144,6 +154,7 @@ const SignUpPage = () => {
                 </button>
 
                 <button
+                onClick={handleGithubSignUp}
                 type="button"
                 className="btn h-10 min-h-0 rounded-lg border border-gray-300 bg-transparent px-2 text-xs text-gray-800 hover:bg-gray-50"
                 >

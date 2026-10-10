@@ -1,6 +1,7 @@
 
 import ProductCard from "@/components/HomePageItems/productCard";
 import { Iproducts } from "@/components/Type/type";
+import { notFound } from "next/navigation";
 import { Suspense } from "react";
 
 type CategoryPageProps = {
@@ -11,7 +12,7 @@ async function CategoryContent({ params }: CategoryPageProps) {
   const { categoryId } = await params;
 
   const res = await fetch(
-    `https://api.api-store.workers.dev/api/bazardor/products?category=${encodeURIComponent(categoryId)}`
+    `https://openapi.programming-hero.com/api/bazardor/products?category=${encodeURIComponent(categoryId)}`
   );
 
   if (!res.ok) {
@@ -22,16 +23,7 @@ async function CategoryContent({ params }: CategoryPageProps) {
   const category = products[0];
 
   if (!category) {
-    return (
-      <div className="rounded-2xl border border-[#dce6de] bg-[#fbfcfb] px-4 py-12 text-center">
-        <h2 className="text-2xl font-bold">
-          কোনো পণ্য পাওয়া যায়নি
-        </h2>
-        <p className="mt-2 text-gray-500">
-          এই ক্যাটাগরিতে এখন কোনো পণ্য নেই।
-        </p>
-      </div>
-    );
+    notFound()
   }
 
   return (
