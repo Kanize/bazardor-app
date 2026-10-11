@@ -3,7 +3,7 @@ import { Iproducts } from "@/components/Type/type";
 
 
 const AllProducts = async () => {
-    'use cache'
+    
     const res = await fetch(
         "https://openapi.programming-hero.com/api/bazardor/products"
     );

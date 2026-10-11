@@ -2,7 +2,7 @@ import { Iproducts } from "../Type/type";
 import ProductCard from "./productCard";
 
 const PriceDown = async () => {
-    'use cache'
+    
     const res = await fetch(
         "https://openapi.programming-hero.com/api/bazardor/products"
     );
