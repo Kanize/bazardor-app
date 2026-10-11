@@ -1,35 +1,22 @@
-🛒 বাজার দর | BazarDor
+# বাজার দর | BazarDor
 
-Today's Market Prices at a Glance
+**BazarDor** is a Bangla-language web application that helps users explore daily market prices of essential products in Bangladesh. Users can browse products by category, view product details, and compare price changes over time.
 
-BazarDor is a Bangla-language web application that helps users explore daily prices of essential products in Bangladesh. It provides product details, category-based browsing, and price comparisons to make everyday shopping decisions easier.
+## Technologies Used
 
-✨ Key Features
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- daisyUI
+- Better Auth
+- REST API
 
-📊 Daily Market Prices — Explore today's prices of essential products in one place.
+## Key Features
 
-🗂️ Category-Based Browsing — Browse products by category for easy navigation.
+1. **Daily Market Prices** — Explore the latest available prices of essential products.
+2. **Category-Based Browsing** — Find products easily through organized categories.
+3. **Price Change Tracking** — Compare prices with previous days, weeks, and months.
+4. **Product Details** — View product information, price summaries, and price comparisons.
+5. **User Authentication** — Sign up, sign in, and access protected pages.
 
-📈 Price Change Tracking — View price changes compared with yesterday, last week, and last month.
-
-🔍 Product Details — See individual product prices, price summaries, and historical comparisons.
-
-🔐 User Authentication — Sign up, sign in, and access protected pages using Better Auth.
-
-🛠️ Technologies Used
-
-Next.js — React framework for building the web application.
-
-React — Component-based user interface.
-
-TypeScript — Type-safe JavaScript development.
-
-Tailwind CSS — Utility-first styling and responsive design.
-
-daisyUI — UI components and styling utilities.
-
-Better Auth — User authentication and session management.
-
-REST API — Fetching product and category data.
-
-Vercel — Deployment and hosting.
