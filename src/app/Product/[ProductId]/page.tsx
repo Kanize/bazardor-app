@@ -9,14 +9,14 @@ const ProductDetailPage = async ({
 }: {
   params: Promise<{ productId: string }>;
 }) => {
-  "use cache";
+  
 
   const { productId } = await params;
 
   const res = await fetch(
     `https://openapi.programming-hero.com/api/bazardor/products/${productId}`
   );
-
+console.log(res);
   if (!res.ok) notFound();
 
   const product: Iproducts = await res.json();
