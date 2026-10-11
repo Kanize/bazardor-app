@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+🛒 বাজার দর | BazarDor
 
-## Getting Started
+Today's Market Prices at a Glance
 
-First, run the development server:
+BazarDor is a Bangla-language web application that helps users explore daily prices of essential products in Bangladesh. It provides product details, category-based browsing, and price comparisons to make everyday shopping decisions easier.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+✨ Key Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+📊 Daily Market Prices — Explore today's prices of essential products in one place.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+🗂️ Category-Based Browsing — Browse products by category for easy navigation.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+📈 Price Change Tracking — View price changes compared with yesterday, last week, and last month.
 
-## Learn More
+🔍 Product Details — See individual product prices, price summaries, and historical comparisons.
 
-To learn more about Next.js, take a look at the following resources:
+🔐 User Authentication — Sign up, sign in, and access protected pages using Better Auth.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+🛠️ Technologies Used
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Next.js — React framework for building the web application.
 
-## Deploy on Vercel
+React — Component-based user interface.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+TypeScript — Type-safe JavaScript development.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Tailwind CSS — Utility-first styling and responsive design.
+
+daisyUI — UI components and styling utilities.
+
+Better Auth — User authentication and session management.
+
+REST API — Fetching product and category data.
+
+Vercel — Deployment and hosting.
