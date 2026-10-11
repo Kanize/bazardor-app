@@ -1,5 +1,6 @@
-import { Iproducts } from "../Type/type";
-import ProductCard from "./productCard";
+import ProductCard from "@/components/HomePageItems/productCard";
+import { Iproducts } from "@/components/Type/type";
+
 
 const AllProducts = async () => {
     'use cache'

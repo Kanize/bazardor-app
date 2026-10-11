@@ -1,5 +1,5 @@
 
-import ProductCard from "@/components/HomePageItems/productCard";
+import ProductSort from "@/components/ProductSort";
 import { Iproducts } from "@/components/Type/type";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
@@ -27,7 +27,7 @@ async function CategoryContent({ params }: CategoryPageProps) {
   }
 
   return (
-    <>
+    <div>
       <div className="mb-8 flex items-center gap-5 rounded-3xl border border-[#dce6de] bg-[#fbfcfb] px-6 py-8 sm:px-10">
         <div className="flex h-20 w-20 shrink-0 items-center justify-center rounded-2xl bg-[#f0f5f1] text-5xl">
           {category.categoryIcon}
@@ -42,35 +42,9 @@ async function CategoryContent({ params }: CategoryPageProps) {
           </p>
         </div>
       </div>
+      <ProductSort products={products} />
 
-      <div className="mb-6 flex flex-wrap items-center justify-between gap-4">
-        <p className="text-lg text-gray-600">
-          মোট {products.length}টি পণ্য দেখানো হচ্ছে
-        </p>
-
-        <div className="flex items-center gap-3">
-          <label htmlFor="product-sort" className="text-gray-600">
-            সাজান
-          </label>
-          <select
-            id="product-sort"
-            defaultValue="default"
-            className="rounded-xl border border-gray-300 bg-[#fbfcfb] px-4 py-3 text-gray-800 outline-none focus:border-green-600"
-          >
-            <option value="default">ডিফল্ট</option>
-            <option value="price-low">দাম: কম থেকে বেশি</option>
-            <option value="price-high">দাম: বেশি থেকে কম</option>
-            <option value="change">দামের পরিবর্তন</option>
-          </select>
-        </div>
-      </div>
-
-      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {products.map((product) => (
-          <ProductCard key={product.id} product={product} />
-        ))}
-      </div>
-    </>
+    </div>
   );
 }
 

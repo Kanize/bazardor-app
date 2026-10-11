@@ -10,7 +10,7 @@ const date = new Date().toLocaleDateString("bn-BD", {
     return (
         <section className="container mx-auto px-4 py-6">
         <div className="relative overflow-hidden rounded-3xl bg-white">
-            <div className="flex min-h-[400px] flex-col items-center justify-between gap-8 px-6 py-10 md:flex-row md:px-12 lg:px-16">
+            <div className="flex min-h-100 flex-col items-center justify-between gap-8 px-6 py-10 md:flex-row md:px-12 lg:px-16">
             {/* Left Content */}
             <div className="max-w-2xl">
                 {/* Date */}
@@ -31,7 +31,7 @@ const date = new Date().toLocaleDateString("bn-BD", {
 
                 {/* Button */}
                 <Link
-                href="/products"
+                href="/allProducts"
                 className="inline-flex items-center rounded-lg bg-green-700 px-6 py-3 font-semibold text-white transition hover:bg-green-800"
                 >
                 সব পণ্য দেখুন

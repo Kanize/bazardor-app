@@ -1,7 +1,8 @@
-import AllProducts from "@/components/HomePageItems/AllProducts";
+
 import Banner from "@/components/HomePageItems/Banner";
 import PriceDown from "@/components/HomePageItems/PriceDown";
 import PriceUp from "@/components/HomePageItems/PriceUp";
+import AllProducts from "./allProducts/page";
 
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
       <Banner />
       <PriceUp/>
       <PriceDown/>
+      {/* <AllProducts/> */}
       <AllProducts/>
     </div>
   );
