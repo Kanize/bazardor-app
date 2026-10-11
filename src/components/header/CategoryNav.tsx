@@ -8,7 +8,7 @@ interface ICategory {
 }
 
 const CategoryNav = async () => {
-  "use cache";
+  
 
   const res = await fetch(
     "https://openapi.programming-hero.com/api/bazardor/categories"

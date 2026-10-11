@@ -3,7 +3,7 @@ import "react-marquee-text/dist/styles.css";
 import { Iproducts } from "../Type/type";
 
 const Marquee = async () => {
-    "use cache";
+   
 
     const res = await fetch(
         "https://openapi.programming-hero.com/api/bazardor/products"
